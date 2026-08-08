@@ -231,11 +231,6 @@ fun MainMenuRevamp(
                     .verticalScroll(rememberScrollState()),
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                HorizontalDivider(
-                    modifier = Modifier.padding(vertical = 4.dp),
-                    color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.2f)
-                )
-
                 ActionCard(
                     modifier = Modifier
                         .fillMaxWidth()
