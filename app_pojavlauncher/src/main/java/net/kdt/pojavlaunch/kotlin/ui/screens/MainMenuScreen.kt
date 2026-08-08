@@ -231,28 +231,6 @@ fun MainMenuRevamp(
                     .verticalScroll(rememberScrollState()),
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
-                ) {
-                    ActionCard(
-                        modifier = Modifier
-                            .weight(1f)
-                            .height(52.dp),
-                        title = stringResource(id = R.string.mcl_tab_wiki),
-                        icon = Icons.Rounded.Info,
-                        onClick = onWikiClick
-                    )
-                    ActionCard(
-                        modifier = Modifier
-                            .weight(1f)
-                            .height(52.dp),
-                        title = stringResource(id = R.string.mcl_button_social_media),
-                        icon = Icons.Rounded.Share,
-                        onClick = onSocialMediaClick
-                    )
-                }
-
                 HorizontalDivider(
                     modifier = Modifier.padding(vertical = 4.dp),
                     color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.2f)
